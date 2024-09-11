@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA DIGITAL TECH</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/landing.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">AA DIGITAL TECH</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2 class="hero-title">Bienvenue dans le futur</h2>
+                <p class="hero-description">
+                    AA DIGITAL TECH est à la pointe de l'innovation technologique. Nous transformons vos idées en
+                    solutions numériques révolutionnaires, adaptées aux besoins de demain. Rejoignez-nous pour faire
+                    partie de cette révolution digitale.
+                </p>
+                <div class="middle">
+                    <a class="btn" href="index.html">
+                        <span class="wave"></span>
+                        <span class="text">En savoir plus</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Images/Prioritaire/female-system-engineer-server-room.jpg" alt="Technology Image">
+            </div>
+        </section>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    });
+
+</script>
+
+</html>
